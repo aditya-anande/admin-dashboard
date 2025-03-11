@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, Roboto, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+div,header,section {
+    border: 1px solid black;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row:1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    background-color: #3299d9;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+}
+
+
+header {
+    display: grid;
+    grid-auto-rows: min-content;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.header-top-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 5px;
+    
+}
+
+button {
+    border-radius: 10px;
+    background-color: #3299d9;
+    color: #fff;
+    padding: 7px 30px;
+    font-size: 16px;
+    border: none;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* Header Ends */
+
+/* Main Content Starts */
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.projects-grid {
+    grid-row: 1/3;
+}
