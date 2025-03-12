@@ -129,17 +129,22 @@ header {
 
 .header-buttons {
     display: flex;
-    gap: 5px;
+    gap: 15px;
     
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #1992D4;
     color: #fff;
-    padding: 7px 30px;
+    padding: 10px 30px;
     font-size: 16px;
     border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #18a2ec;
 }
 
 .header-bottom {
